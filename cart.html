@@ -61,12 +61,9 @@
             </li>
 
             <li class="nav_item">
-              <a href="account.html" class="nav_link active-link">Details</a>
+              <a href="account.html" class="nav_link active-link">Cart</a>
             </li>
 
-            <li class="nav_item">
-              <a href="login-register.html" class="nav_link">Login</a>
-            </li>
           </ul>
 
           <div class="header_search">
@@ -279,7 +276,7 @@
                 <td><img src="${item.image}" alt="" class="table_img"></td>
                 <td>
                     <h3 class="table_title">${item.name}</h3>
-                    <p class="table_description">Toi yeu ban</p>
+                    <p class="table_description">I love you</p>
                 </td>
                 <td><span class="table_price">${item.price.toLocaleString()} VND</span></td>
                 <td><input type="number" class="quantity" value="${
@@ -299,7 +296,7 @@
           });
         } else {
           const tr = document.createElement("tr");
-          tr.innerHTML = `<td colspan="6" style="text-align:center;">Giỏ hàng của bạn đang trống</td>`;
+          tr.innerHTML = `<td colspan="6" style="text-align:center;">Your cart is empty!</td>`;
           cartItemsContainer.appendChild(tr);
         }
       });
