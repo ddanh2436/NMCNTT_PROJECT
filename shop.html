@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FLATICON ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Ecommerce Website</title>
+  </head>
+  <body>
+    <!--=============== HEADER ===============-->
+    <header class="header">
+        <div class="header_top">
+          <div class="header_container container">
+            <div class="header_contact">
+              <span>(+84)-1234-56789</span>
+  
+              <span>Our location</span>
+            </div>
+  
+            <p class="header_alert-news">
+              Super Value Deals - Save more with coupons
+            </p>
+  
+            <a href="login-register.html" class="header_top-actions">
+              Log in / Sign up
+            </a>
+          </div>
+        </div>
+  
+        <nav class="nav container">
+          <a href="index.html" class="nav_logo">
+            <img src="img/logo1.png" alt="" class="nav_logo-img" />
+          </a>
+  
+          <div class="nav_menu" id="nav-menu">
+            <ul class="nav_list">
+              <li class="nav_item">
+                <a href="index.html" class="nav_link">Home</a>
+              </li>
+  
+              <li class="nav_item">
+                <a href="shop.html" class="nav_link active-link">Shop</a>
+              </li>
+  
+              <li class="nav_item">
+                <a href="account.html" class="nav_link">My Account</a>
+              </li>
+  
+              <li class="nav_item">
+                <a href="login-register.html" class="nav_link">Login</a>
+              </li>
+            </ul>
+  
+            <div class="header_search">
+              <input
+                type="text"
+                placeholder="Search for items...."
+                class="input_form"
+              />
+  
+              <button class="search_btn">
+                <img src="img/search.png" alt="" />
+              </button>
+            </div>
+          </div>
+  
+          <div class="header_user-actions">
+            <a href="wishlist.html" class="header_action-btn">
+              <i class="fa-regular fa-heart"></i>
+              <span class="count">3</span>
+            </a>
+  
+            <a href="cart.html" class="header_action-btn">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span class="count">3</span>
+            </a>
+          </div>
+        </nav>
+      </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+      <!--=============== BREADCRUMB ===============-->
+      <section class="breadcrumb">
+        <ul class="breadcrumb_list flex container">
+            <li><a href="index.html" class="breadcrumb_link">Home</a></li>
+            <li><span class="breadcrumb_link">></span></li>
+            <li><span class="breadcrumb_link"> Shop</span></li>
+        </ul>
+      </section>
+
+      <!--=============== PRODUCTS ===============-->
+      <section class="products section_lg container">
+        <p class="total_products">We found  <span>20</span>items for you!</p>
+
+        <div class="products_container grid">
+            <div class="product_item">
+              <div class="product_banner">
+                <a href="details.html" class="product_images">
+                  <img
+                    src="img/product-1-1.jpg"
+                    alt=""
+                    class="product_img default"
+                  />
+                  <img
+                    src="img/product-1-2.jpg"
+                    alt=""
+                    class="product_img hover"
+                  />
+                </a>
+
+                <div class="product_actions">
+                  <a href="#" class="action_btn" aria-label="Quick View">
+                    <i class="fa-regular fa-eye"></i>
+                  </a>
+
+                  <a href="#" class="action_btn" aria-label="Add to Wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                  </a>
+
+                  <a href="#" class="action_btn" aria-label="Compare">
+                    <i class="fa-regular fa-shuffle"></i>
+                  </a>
+                </div>
+
+                <div class="product_badge light_pink">Hot</div>
+              </div>
+
+              <div class="product_content">
+                <span class="product_category">Clothing</span>
+                <a href="details.html">
+                  <h3 class="product_title">Colorful Pattern Shirts</h3>
+                </a>
+                <div class="product_rating">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="product_price flex">
+                  <span class="new_price">499.999 VND</span>
+                  <span class="old_price">649.000 VND</span>
+                </div>
+
+                <a
+                  href="#"
+                  class="action_btn cart_btn"
+                  aria-label="Add to Cart"
+                >
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product_item">
+              <div class="product_banner">
+                <a href="details.html" class="product_images">
+                  <img
+                    src="img/product-2-1.jpg"
+                    alt=""
+                    class="product_img default"
+                  />
+                  <img
+                    src="img/product-2-2.jpg"
+                    alt=""
+                    class="product_img hover"
+                  />
+                </a>
+
+                <div class="product_actions">
+                  <a href="#" class="action_btn" aria-label="Quick View">
+                    <i class="fa-regular fa-eye"></i>
+                  </a>
+
+                  <a href="#" class="action_btn" aria-label="Add to Wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                  </a>
+
+                  <a href="#" class="action_btn" aria-label="Compare">
+                    <i class="fa-regular fa-shuffle"></i>
+                  </a>
+                </div>
+
+                <div class="product_badge light_green">Hot</div>
+              </div>
+
+              <div class="product_content">
+                <span class="product_category">Clothing</span>
+                <a href="details.html">
+                  <h3 class="product_title">Colorful Pattern Shirts</h3>
+                </a>
+                <div class="product_rating">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="product_price flex">
+                  <span class="new_price">499.999 VND</span>
+                  <span class="old_price">649.000 VND</span>
+                </div>
+
+                <a
+                  href="#"
+                  class="action_btn cart_btn"
+                  aria-label="Add to Cart"
+                >
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product_item">
+              <div class="product_banner">
+                <a href="details.html" class="product_images">
+                  <img
+                    src="img/product-3-1.jpg"
+                    alt=""
+                    class="product_img default"
+                  />
+                  <img
+                    src="img/product-3-2.jpg"
+                    alt=""
+                    class="product_img hover"
+                  />
+                </a>
+
+                <div class="product_actions">
+                  <a href="#" class="action_btn" aria-label="Quick View">
+                    <i class="fa-regular fa-eye"></i>
+                  </a>
+
+                  <a href="#" class="action_btn" aria-label="Add to Wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                  </a>
+
+                  <a href="#" class="action_btn" aria-label="Compare">
+                    <i class="fa-regular fa-shuffle"></i>
+                  </a>
+                </div>
+
+                <div class="product_badge light_orange">Hot</div>
+              </div>
+
+              <div class="product_content">
+                <span class="product_category">Clothing</span>
+                <a href="details.html">
+                  <h3 class="product_title">Colorful Pattern Shirts</h3>
+                </a>
+                <div class="product_rating">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="product_price flex">
+                  <span class="new_price">499.999 VND</span>
+                  <span class="old_price">649.000 VND</span>
+                </div>
+
+                <a
+                  href="#"
+                  class="action_btn cart_btn"
+                  aria-label="Add to Cart"
+                >
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product_item">
+              <div class="product_banner">
+                <a href="details.html" class="product_images">
+                  <img
+                    src="img/product-4-1.jpg"
+                    alt=""
+                    class="product_img default"
+                  />
+                  <img
+                    src="img/product-4-2.jpg"
+                    alt=""
+                    class="product_img hover"
+                  />
+                </a>
+
+                <div class="product_actions">
+                  <a href="#" class="action_btn" aria-label="Quick View">
+                    <i class="fa-regular fa-eye"></i>
+                  </a>
+
+                  <a href="#" class="action_btn" aria-label="Add to Wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                  </a>
+
+                  <a href="#" class="action_btn" aria-label="Compare">
+                    <i class="fa-regular fa-shuffle"></i>
+                  </a>
+                </div>
+
+                <div class="product_badge light_blue">Hot</div>
+              </div>
+
+              <div class="product_content">
+                <span class="product_category">Clothing</span>
+                <a href="details.html">
+                  <h3 class="product_title">Colorful Pattern Shirts</h3>
+                </a>
+                <div class="product_rating">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="product_price flex">
+                  <span class="new_price">499.999 VND</span>
+                  <span class="old_price">649.000 VND</span>
+                </div>
+
+                <a
+                  href="#"
+                  class="action_btn cart_btn"
+                  aria-label="Add to Cart"
+                >
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product_item">
+              <div class="product_banner">
+                <a href="details.html" class="product_images">
+                  <img
+                    src="img/product-5-1.jpg"
+                    alt=""
+                    class="product_img default"
+                  />
+                  <img
+                    src="img/product-5-2.jpg"
+                    alt=""
+                    class="product_img hover"
+                  />
+                </a>
+
+                <div class="product_actions">
+                  <a href="#" class="action_btn" aria-label="Quick View">
+                    <i class="fa-regular fa-eye"></i>
+                  </a>
+
+                  <a href="#" class="action_btn" aria-label="Add to Wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                  </a>
+
+                  <a href="#" class="action_btn" aria-label="Compare">
+                    <i class="fa-regular fa-shuffle"></i>
+                  </a>
+                </div>
+
+                <div class="product_badge light_pink">-30%</div>
+              </div>
+
+              <div class="product_content">
+                <span class="product_category">Clothing</span>
+                <a href="details.html">
+                  <h3 class="product_title">Colorful Pattern Shirts</h3>
+                </a>
+                <div class="product_rating">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="product_price flex">
+                  <span class="new_price">499.999 VND</span>
+                  <span class="old_price">649.000 VND</span>
+                </div>
+
+                <a
+                  href="#"
+                  class="action_btn cart_btn"
+                  aria-label="Add to Cart"
+                >
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product_item">
+              <div class="product_banner">
+                <a href="details.html" class="product_images">
+                  <img
+                    src="img/product-6-1.jpg"
+                    alt=""
+                    class="product_img default"
+                  />
+                  <img
+                    src="img/product-6-2.jpg"
+                    alt=""
+                    class="product_img hover"
+                  />
+                </a>
+
+                <div class="product_actions">
+                  <a href="#" class="action_btn" aria-label="Quick View">
+                    <i class="fa-regular fa-eye"></i>
+                  </a>
+
+                  <a href="#" class="action_btn" aria-label="Add to Wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                  </a>
+
+                  <a href="#" class="action_btn" aria-label="Compare">
+                    <i class="fa-regular fa-shuffle"></i>
+                  </a>
+                </div>
+
+                <div class="product_badge light_pink">-22%</div>
+              </div>
+
+              <div class="product_content">
+                <span class="product_category">Clothing</span>
+                <a href="details.html">
+                  <h3 class="product_title">Colorful Pattern Shirts</h3>
+                </a>
+                <div class="product_rating">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="product_price flex">
+                  <span class="new_price">499.999 VND</span>
+                  <span class="old_price">649.000 VND</span>
+                </div>
+
+                <a
+                  href="#"
+                  class="action_btn cart_btn"
+                  aria-label="Add to Cart"
+                >
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product_item">
+              <div class="product_banner">
+                <a href="details.html" class="product_images">
+                  <img
+                    src="img/product-7-1.jpg"
+                    alt=""
+                    class="product_img default"
+                  />
+                  <img
+                    src="img/product-7-2.jpg"
+                    alt=""
+                    class="product_img hover"
+                  />
+                </a>
+
+                <div class="product_actions">
+                  <a href="#" class="action_btn" aria-label="Quick View">
+                    <i class="fa-regular fa-eye"></i>
+                  </a>
+
+                  <a href="#" class="action_btn" aria-label="Add to Wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                  </a>
+
+                  <a href="#" class="action_btn" aria-label="Compare">
+                    <i class="fa-regular fa-shuffle"></i>
+                  </a>
+                </div>
+
+                <div class="product_badge light_green">Hot</div>
+              </div>
+
+              <div class="product_content">
+                <span class="product_category">Clothing</span>
+                <a href="details.html">
+                  <h3 class="product_title">Colorful Pattern Shirts</h3>
+                </a>
+                <div class="product_rating">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="product_price flex">
+                  <span class="new_price">499.999 VND</span>
+                  <span class="old_price">649.000 VND</span>
+                </div>
+
+                <a
+                  href="#"
+                  class="action_btn cart_btn"
+                  aria-label="Add to Cart"
+                >
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product_item">
+              <div class="product_banner">
+                <a href="details.html" class="product_images">
+                  <img
+                    src="img/product-8-1.jpg"
+                    alt=""
+                    class="product_img default"
+                  />
+                  <img
+                    src="img/product-8-2.jpg"
+                    alt=""
+                    class="product_img hover"
+                  />
+                </a>
+
+                <div class="product_actions">
+                  <a href="#" class="action_btn" aria-label="Quick View">
+                    <i class="fa-regular fa-eye"></i>
+                  </a>
+
+                  <a href="#" class="action_btn" aria-label="Add to Wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                  </a>
+
+                  <a href="#" class="action_btn" aria-label="Compare">
+                    <i class="fa-regular fa-shuffle"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="product_content">
+                <span class="product_category">Clothing</span>
+                <a href="details.html">
+                  <h3 class="product_title">Colorful Pattern Shirts</h3>
+                </a>
+                <div class="product_rating">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="product_price flex">
+                  <span class="new_price">499.999 VND</span>
+                  <span class="old_price">649.000 VND</span>
+                </div>
+
+                <a
+                  href="#"
+                  class="action_btn cart_btn"
+                  aria-label="Add to Cart"
+                >
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <ul class="pagination">
+            <li><a href="#" class="pagination_link active">01</a></li>
+            <li><a href="#" class="pagination_link">02</a></li>
+            <li><a href="#" class="pagination_link">03</a></li>
+            <li><a href="#" class="pagination_link">...</a></li>
+            <li><a href="#" class="pagination_link">16</a></li>
+            <li>
+                <a href="#" class="pagination_link icon">
+                    <i class="fa-solid fa-angles-right"></i>
+                </a>
+            </li>
+          </ul>
+      </section>
+
+      <!--=============== NEWSLETTER ===============-->
+      <section class="newsletter section home_newsletter">
+        <div class="newsletter_container container grid">
+          <h3 class="newsletter_title flex">
+            <img src="img/icon-email.svg" class="newsletter_icon" alt="" />
+            Sign up Newsletter
+          </h3>
+
+          <p class="newsletter_description">
+            ... and receive 50% coupon for first shopping.
+          </p>
+
+          <form action="" class="newsletter_form">
+            <input
+              type="text"
+              placeholder="Enter your email"
+              class="newsletter_input"
+            />
+            <button type="submit" class="newsletter_btn">Subscribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer container">
+        <div class="footer_container grid">
+          <div class="footer_content">
+            <a href="index.html" class="footer_logo">
+              <img src="img/logo1.png" class="footer_logo-img">
+            </a>
+
+            <h4 class="footer_subtitle">Contact</h4>
+
+            <p class="footer_description">
+              <span>Address:</span> 227 Nguyen Van Cu, Phuong 4, District 5, HCM city
+            </p>
+
+            <p class="footer_description">
+              <span>Phone:</span> 0943192824/(+84) 943192824
+            </p>
+
+            <p class="footer_description">
+              <span>Work hours:</span> 10:00 -18:00, Mon- Sat 
+            </p>
+
+            <div class="footer_social">
+              <h4 class="footer_subtitle">Follow Us</h4>
+
+              <div class="footer_social-links">
+                <a href="">
+                  <img src="img/icon-facebook.svg" alt="" class="footer_social-icon">
+                </a>
+
+                <a href="">
+                  <img src="img/icon-twitter.svg" alt="" class="footer_social-icon">
+                </a>
+
+                <a href="">
+                  <img src="img/icon-instagram.svg" alt="" class="footer_social-icon">
+                </a>
+
+                <a href="">
+                  <img src="img/icon-pinterest.svg" alt="" class="footer_social-icon">
+                </a>
+
+                <a href="">
+                  <img src="img/icon-youtube.svg" alt="" class="footer_social-icon">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer_content">
+            <h3 class="footer_title">Address</h3>
+
+            <ul class="footer_links">
+              <li><a href="" class="footer_link">About Us</a></li>
+              <li><a href="" class="footer_link">Delivery Information</a></li>
+              <li><a href="" class="footer_link">Privacy Policy</a></li>
+              <li><a href="" class="footer_link">Terms & Conditions</a></li>
+              <li><a href="" class="footer_link">Contact Us</a></li>
+              <li><a href="" class="footer_link">Support Center</a></li>
+            </ul>
+          </div>
+
+          <div class="footer_content">
+            <h3 class="footer_title">My Account</h3>
+
+            <ul class="footer_links">
+              <li><a href="" class="footer_link">Sign In</a></li>
+              <li><a href="" class="footer_link">View Cart</a></li>
+              <li><a href="" class="footer_link">My Wishlist</a></li>
+              <li><a href="" class="footer_link">Track my order</a></li>
+              <li><a href="" class="footer_link">Help</a></li>
+              <li><a href="" class="footer_link">Order</a></li>
+            </ul>
+          </div>
+
+          <div class="footer_content">
+            <h3 class="footer_title">Secured Payment Gateways</h3>
+
+            <img src="img/payment-method.png" alt="" class="payment_img">
+          </div>
+        </div>
+
+        <div class="footer_bottom">
+          <p class="copyright"><i class="fa-regular fa-copyright"></i>2024 Duy Anh. All rights reserved</p>
+          <span class="designer">Designed by: Dao Duy Anh</span>
+          <span class="designer">Inspration by: Youtube</span>
+        </div>
+      </footer>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Swiper -->
+    <script>
+      var swiperCategories = new Swiper(".categories_container", {
+        spaceBetween: 24,
+        loop: true,
+
+        navigation: {
+          nextEl: ".swiper-button-next button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1400: {
+            slidesPerView: 6,
+            spaceBetween: 24,
+          },
+        },
+      });
+    </script>
+    <!-- Swiper Product -->
+    <script>
+      var swiperProducts = new Swiper(".new_container", {
+        spaceBetween: 24,
+        loop: true,
+
+        navigation: {
+          nextEl: ".swiper-button-next button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1400: {
+            slidesPerView: 4,
+            spaceBetween: 24,
+          },
+        },
+      });
+    </script>
+    <script type="module">
+      const tabs = document.querySelectorAll("[data-target]"),
+        tabContents = document.querySelectorAll("[content]");
+
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          const target = document.querySelector(tab.dataset.target);
+          tabContents.forEach((tabContent) => {
+            tabContent.classList.remove("active_tab");
+          });
+
+          target.classList.add("active_tab");
+
+          tabs.forEach((tab) => {
+            tab.classList.remove("active_tab");
+          });
+
+          tab.classList.add("active_tab");
+        });
+      });
+    </script>
+  </body>
+</html>
