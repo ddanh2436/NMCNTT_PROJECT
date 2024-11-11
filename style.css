@@ -2,11 +2,13 @@
 
 :root {
   --header-height: 4rem;
+  /* --first-color: #e98d9e; */
   --first-color: hsl(176, 88%, 27%);
   --first-color-alt: hsl(129, 44%, 94%);
   --second-color: hsl(34, 94%, 87%);
   --title-color: hsl(0, 0%, 13%);
   --text-color: hsl(154, 13%, 32%);
+  /* --text-color: #e98d9e; */
   --text-color-light: hsl(60, 1%, 56%);
   --body-color: hsl(0, 0%, 100%);
   --container-color: hsl(0, 0%, 93%);
@@ -321,6 +323,7 @@ input {
   border: 1px solid var(--border-color);
   padding: 0.625rem 0.625rem 1.25rem;
   border-radius: 1.25rem;
+  max-height: 250px;
 }
 
 .category_img {

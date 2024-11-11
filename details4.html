@@ -46,7 +46,7 @@
 
       <nav class="nav container">
         <a href="index.html" class="nav_logo">
-          <img src="img/logo1.png" alt="" class="nav_logo-img" />
+          <img src="img/logo3.png" alt="" class="nav_logo-img" />
         </a>
 
         <div class="nav_menu" id="nav-menu">
@@ -230,7 +230,7 @@
             </div>
 
             <div class="details_action">
-              <input type="number" class="quantity" value="3" />
+              <input type="number" class="quantity" value="1" />
 
               <a href="#" class="btn btn_sm">Add to Cart</a>
 
@@ -282,7 +282,7 @@
       <div class="footer_container grid">
         <div class="footer_content">
           <a href="index.html" class="footer_logo">
-            <img src="img/logo1.png" class="footer_logo-img" />
+            <img src="img/logo3.png" class="footer_logo-img" />
           </a>
 
           <h4 class="footer_subtitle">Contact</h4>
@@ -394,18 +394,22 @@
     <!-- Swiper -->
     <script>
       // Initialize an empty array for cart items or load from localStorage
-      // Initialize an empty array for cart items or load from localStorage
       let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
       // Function to add product to cart
       function addToCart() {
         // Get product details
         const productName = document.querySelector(".details_title").innerText;
-        const price = parseInt(
-          document.querySelector(".new_price").innerText.replace(/[^0-9]/g, "")
-        );
+
+        // Format price with locale and keep it as a string with commas
+        const price = document
+          .querySelector(".new_price")
+          .innerText.replace(/[^0-9,.]/g, "");
+
         const quantity = parseInt(document.querySelector(".quantity").value);
-        const subtotal = price * quantity;
+        const subtotal = (
+          parseInt(price.replace(/,/g, "")) * quantity
+        ).toLocaleString(); // Calculate subtotal as a formatted string
         const image = document.querySelector(".details_img").src; // Get the image URL
 
         // Find if product already exists in cart
@@ -414,15 +418,17 @@
         if (existingProduct) {
           // If product exists, update quantity and subtotal
           existingProduct.quantity += quantity;
-          existingProduct.subtotal =
-            existingProduct.price * existingProduct.quantity;
+          existingProduct.subtotal = (
+            parseInt(existingProduct.price.replace(/,/g, "")) *
+            existingProduct.quantity
+          ).toLocaleString();
         } else {
           // If not, add as a new item
           cart.push({
             name: productName,
-            price: price,
+            price: price, // Keep price as a string with commas
             quantity: quantity,
-            subtotal: subtotal,
+            subtotal: subtotal, // Store subtotal as a formatted string
             image: image, // Add the image URL
           });
         }
