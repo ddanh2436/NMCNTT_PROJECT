@@ -2,8 +2,8 @@
 
 :root {
   --header-height: 4rem;
-  /* --first-color: #e98d9e; */
-  --first-color: hsl(176, 88%, 27%);
+  --first-color: #e98d9e;
+  /* --first-color: hsl(176, 88%, 27%); */
   --first-color-alt: hsl(129, 44%, 94%);
   --second-color: hsl(34, 94%, 87%);
   --title-color: hsl(0, 0%, 13%);
